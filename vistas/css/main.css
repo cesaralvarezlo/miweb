@@ -1,0 +1,151 @@
+/*------Resetear pagina------*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Arial, Verdana, sans-serif;
+    background: #ffffff;
+}
+
+/*------Main header------*/
+.main-header {
+    width: 100%;
+	position: fixed;
+	top: 0;
+	background: #ECF0F1;
+	box-shadow: 0 5px 10px 0 rgba(0,0,0,0.4);
+	z-index: 999;
+}
+
+/*------Main Section------*/
+.main-section {
+    width: 100%;
+	position: relative;
+    background: #f2f3f4;
+}
+
+/*----Wrapper container----*/
+.wrapper-container {
+	width: 100%;
+	position: relative;
+    background: #F2F3F4;
+}
+
+/*--Contenedor principal--*/
+.contenedor-principal {
+	max-width: 1080px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+/*------Main Footer------*/
+.main-footer {
+    width: 100%;
+	position: relative;
+    background: #34495E;
+}
+
+/*------Footer wrapper------*/
+.footer-wrapper {
+	width: 100%;
+	position: relative;
+}
+
+/*------Footer bottom------*/
+.footer-bottom {
+	width: 100%;
+	position: relative;
+}
+.footer-bottom-copyring {
+	padding: 20px 5px;
+	text-align: center;
+}
+.footer-bottom-copyring p {
+	color: #B3B6B7;
+	opacity: .9;
+	font-size: 14px;
+}
+
+/*------Page titulo------*/
+.page-titulo {
+	width: 100%;
+	padding: 30px 0 0 0;
+	border-bottom: 1px solid rgba(128,128,128,.2);
+	margin-bottom: 20px;
+}
+.page-titulo h1 {
+	font-size: 35px;
+	color: #41424E;
+	opacity: .8;
+	padding: 0 10px;
+}
+
+/*------Boton ir arriba------*/
+.contenedor-ir-arriba {
+	display: none;
+	background-color: mediumseagreen;
+	background-image: linear-gradient(rgba(32,178,170,0.6), rgba(60,195,105,1));
+	cursor: pointer;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	position: fixed;
+	bottom: 15px;
+    right: 15px;
+    transform: translate(-5px, -5px);
+	z-index: 9999;
+}
+.contenedor-ir-arriba:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.ir-arriba {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	color: #ffffff;
+    font-size: 40px;
+}
+.ir-arriba:hover {
+	color: #D0D3D4;
+}
+
+/*------Media Query------*/
+@media screen and (max-width: 800px){
+
+
+}
+
+@media screen and (max-width: 640px){
+
+    /*------Boton ir arriba------*/
+    .contenedor-ir-arriba {
+        width: 50px;
+        height: 50px;
+        bottom: 52px;
+        right: 5px;
+    }
+	
+}
+
+@media screen and (max-width: 480px){
+
+	/*------Page titulo------*/
+	.page-titulo h1 {
+		font-size: 28px;
+	}
+
+}
+
+@media screen and (max-width: 380px){
+
+}
+
+@media screen and (max-width: 340px){
+    
+}

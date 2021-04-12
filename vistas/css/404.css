@@ -1,0 +1,84 @@
+/*-----PAGINA DE ERROR 404 ----*/
+.noencontrada-wrapper {
+	margin-top: 60px;
+	padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.noencontrada-box {
+    max-width: 800px;
+	width: 100%;
+	overflow: hidden;
+	box-sizing: border-box;
+	background-color: mediumseagreen;
+	background-image: linear-gradient(rgba(32,178,170,0.6), rgba(60,195,105,1));
+	padding: 48px;
+}
+.noencontrada-box div {
+	display: flex;
+	justify-content: center;
+	border-bottom: 1px solid rgba(255,255,255,0.4);
+}
+.noencontrada-box div img {
+	width: 40%;
+	height: 40%;
+}
+.noencontrada-box h1 {
+	text-align: center;
+	margin-bottom: 20px;
+	color: white;
+	font-size: 48px;
+}
+.noencontrada-box h2 {
+	font-size: 16px;
+	padding-left: 40px;
+	color: white;
+}
+.noencontrada-box p {
+	font-size: 20px;
+	color: white;
+	padding-left: 40px;
+}
+.noencontrada-box nav {
+	display: block;
+	padding-left: 40px;
+}
+.noencontrada-box nav a {
+	display: block;
+	padding-top: 10px;
+	text-decoration: none;
+}
+.noencontrada-box nav a:hover {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+/*-------- MEDIA QUERY  -------*/
+@media screen and (max-width: 640px){
+	.noencontrada-wrapper {
+		margin-top: 55px;
+	}
+	.noencontrada-box {
+		padding: 16px;
+	}
+	.noencontrada-box h1 {
+		font-size: 32px;
+	}
+	.noencontrada-box h2 {
+		font-size: 24px;
+		padding-left: 10px;
+	}
+	.noencontrada-box p {
+		font-size: 16px;
+		padding: 10px;
+	}
+	.noencontrada-box nav {
+		padding-left: 10px;
+	}
+	.noencontrada-box nav a {
+		padding-top: 10px;
+    }
+    
+}

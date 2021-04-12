@@ -1,0 +1,15 @@
+#IMPEDIR QUE SE PUEDA VER EL LISTADO DE UN DIRECTORIO
+Options All -Indexes
+
+#URLS AMIGABLES
+Options +FollowSymLinks 
+RewriteEngine On
+
+RewriteRule ^([-a-zA-Z0-9/]+)$ index.php?ruta=$1 [L,QSA]
+
+#RewriteEngine On
+#RewriteCond %{HTTPS} off
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+#PROTECCION CONTRA ATAQUE XSS
+#Header set X-XSS-Protection "1; mode=block"
